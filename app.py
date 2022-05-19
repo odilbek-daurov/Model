@@ -7,8 +7,6 @@ import platform
 plt = platform.system()
 if plt == 'Linux':pathlib.WindowsPath = pathlib.PosixPath
 
-st.button('Rerun') 
-
 # title
 st.title('Aralash klassifikatsiya qiluvchi model')
 st.text('Racket Helmet Fish Door Bed shu rasimlarga ishleydigan model')
@@ -34,6 +32,3 @@ if file:
     # plotlin
     fig = px.bar(x = probs*100,y = model.dls.vocab)
     st.plotly_chart(fig)
-
-  
-st.date_input('Your birthday')
